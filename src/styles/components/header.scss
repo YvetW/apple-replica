@@ -1,0 +1,27 @@
+@import "../base/variables";
+
+#globalnav {
+  background-color: $globalnav-background-opened-dark;
+
+  .globalnav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 44px;
+    margin: 0 -8px;
+
+    .globalnav-link {
+      padding: 0 8px;
+      color: $globalnav-color;
+      font-size: 11px;
+    }
+
+    .globalnav-link-icon {
+      font-size: 17px;
+    }
+
+  }
+
+
+}

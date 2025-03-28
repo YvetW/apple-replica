@@ -8,9 +8,8 @@ import {ShopPage} from './pages/ShopPage.tsx';
 function App() {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
-
             <Route element={<Layout />}>
+                <Route path="/" element={<Home />} />
                 <Route path="iphone" element={<IphonePage />} />
                 <Route path="shop" element={<ShopPage />} />
             </Route>
