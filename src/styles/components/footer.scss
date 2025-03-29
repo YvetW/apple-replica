@@ -1,0 +1,26 @@
+@import "../base/variables";
+
+#globalfooter {
+  background-color: $footer-background;
+
+  .gf-text {
+    padding: 17px 0 11px 0;
+
+    .gf-text-list li {
+      font-size: 12px;
+      color: $footer-text-color;
+      padding-bottom: 9.6px;
+    }
+  }
+
+  .gf-nav {
+display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    .gf-nav-column {
+.gf-column-section{
+
+}
+    }
+  }
+}

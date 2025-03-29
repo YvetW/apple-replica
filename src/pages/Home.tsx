@@ -1,5 +1,9 @@
 export function Home() {
     return (
-        <h1>这是Home</h1>
+        <div id="home">
+           <div className="container">
+               <h1>这是Home</h1>
+           </div>
+        </div>
     );
 }
