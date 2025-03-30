@@ -33,10 +33,9 @@ export function Footer() {
                     <div className="gf-nav-column">
                         <div className="gf-column-section">
                             <h3 className="gf-column-section-title">
-                                <span className="gf-column-section-title-text">选购及了解</span>
+                                <span>选购及了解</span>
                             </h3>
-                            <ul id="footer-directory-column-section-products"
-                                className="gf-column-section-list">
+                            <ul className="gf-column-section-list">
                                 <li><a href="#">商店</a></li>
                                 <li><a href="#">Mac</a></li>
                                 <li><a href="#">iPad</a></li>
@@ -52,7 +51,7 @@ export function Footer() {
                         </div>
                         <div className="gf-column-section">
                             <h3 className="gf-column-section-title">
-                                <span className="gf-column-section-title-text">Apple 钱包</span>
+                                <span>Apple 钱包</span>
                             </h3>
                             <ul id="footer-directory-column-section-applewallet"
                                 className="gf-column-section-list">
@@ -63,10 +62,9 @@ export function Footer() {
                     <div className="gf-nav-column">
                         <div className="gf-column-section">
                             <h3 className="gf-column-section-title">
-                                <span className="gf-column-section-title-text">账户</span>
+                                <span>账户</span>
                             </h3>
-                            <ul id="footer-directory-column-section-accounts"
-                                className="gf-column-section-list">
+                            <ul className="gf-column-section-list">
                                 <li><a href="#"> 管理你的 Apple 账户</a></li>
                                 <li><a href="#">Apple Store 账户</a></li>
                                 <li><a href="#">iCloud.com</a></li>
@@ -75,10 +73,9 @@ export function Footer() {
                         </div>
                         <div className="gf-column-section">
                             <h3 className="gf-column-section-title">
-                                <span className="gf-column-section-title-text">娱乐</span>
+                                <span>娱乐</span>
                             </h3>
-                            <ul id="footer-directory-column-section-entertainment"
-                                className="gf-column-section-list">
+                            <ul className="gf-column-section-list">
                                 <li><a href="#">Apple Music</a></li>
                                 <li><a href="#">Apple 播客</a></li>
                                 <li><a href="#">App Store</a></li>
@@ -88,10 +85,9 @@ export function Footer() {
                     <div className="gf-nav-column">
                         <div className="gf-column-section">
                             <h3 className="gf-column-section-title">
-                                <span className="gf-column-section-title-text">Apple Store 商店</span>
+                                <span>Apple Store 商店</span>
                             </h3>
-                            <ul id="footer-directory-column-section-storeservices"
-                                className="gf-column-section-list">
+                            <ul className="gf-column-section-list">
                                 <li><a href="#">查找零售店</a></li>
                                 <li><a href="#">Genius Bar 天才吧</a></li>
                                 <li><a href="#">Today at Apple</a></li>
@@ -109,20 +105,18 @@ export function Footer() {
                     <div className="gf-nav-column">
                         <div className="gf-column-section">
                             <h3 className="gf-column-section-title">
-                                <span className="gf-column-section-title-text">商务应用</span>
+                                <span>商务应用</span>
                             </h3>
-                            <ul id="footer-directory-column-section-business"
-                                className="gf-column-section-list">
+                            <ul className="gf-column-section-list">
                                 <li><a href="#">Apple 与商务</a></li>
                                 <li><a href="#">商务选购</a></li>
                             </ul>
                         </div>
                         <div className="gf-column-section">
                             <h3 className="gf-column-section-title">
-                                <span className="gf-column-section-title-text">教育应用</span>
+                                <span>教育应用</span>
                             </h3>
-                            <ul id="footer-directory-column-section-education"
-                                className="gf-column-section-list">
+                            <ul className="gf-column-section-list">
                                 <li><a href="#">Apple 与教育</a></li>
                                 <li><a href="#">高校师生选购</a></li>
                             </ul>
@@ -131,10 +125,9 @@ export function Footer() {
                     <div className="gf-nav-column">
                         <div className="gf-column-section">
                             <h3 className="gf-column-section-title">
-                                <span className="gf-column-section-title-text">Apple 价值观</span>
+                                <span>Apple 价值观</span>
                             </h3>
-                            <ul id="footer-directory-column-section-responsibility"
-                                className="gf-column-section-list">
+                            <ul className="gf-column-section-list">
                                 <li><a href="#">辅助功能</a></li>
                                 <li><a href="#">教育</a></li>
                                 <li><a href="#">环境责任</a></li>
@@ -144,10 +137,9 @@ export function Footer() {
                         </div>
                         <div className="gf-column-section">
                             <h3 className="gf-column-section-title">
-                                <span className="gf-column-section-title-text">关于 Apple</span>
+                                <span>关于 Apple</span>
                             </h3>
-                            <ul id="footer-directory-column-section-about"
-                                className="gf-column-section-list">
+                            <ul className="gf-column-section-list">
                                 <li><a href="#">Newsroom</a></li>
                                 <li><a href="#">Apple 管理层</a></li>
                                 <li><a href="#">工作机会</a></li>
@@ -160,36 +152,40 @@ export function Footer() {
                         </div>
                     </div>
                 </nav>
-                <section className="ac-gf-footer">
-                    <div className="ac-gf-footer-shop">
+                <section className="gf-footer">
+                    <div className="gf-footer-shop">
                         更多选购方式：<a href="#">查找你附近的 Apple Store 零售店</a>及<a href="#">更多门店</a>，<span
-                        className="nowrap">或者致电 <a href="tel:400-666-8800">400-666-8800</a>。</span>
+                    >或者致电 <a href="#">400-666-8800</a>。</span>
                     </div>
-                    <div className="ac-gf-footer-legal">
-                        <div className="ac-gf-footer-legal-copyright">Copyright © 2025 Apple Inc. 保留所有权利。</div>
-                        <ul className="ac-gf-footer-legal-links">
-                            <li className="ac-gf-footer-legal-links-item">
-                                <a className="ac-gf-footer-legal-link" href="#">隐私政策</a>
+                    <div className="gf-footer-legal">
+                        <div className="gf-footer-legal-copyright">Copyright © 2025 Apple Inc. 保留所有权利。</div>
+                        <ul className="gf-footer-legal-links">
+                            <li>
+                                <a href="#">隐私政策</a>
                             </li>
-                            <li className="ac-gf-footer-legal-links-item">
-                                <a className="ac-gf-footer-legal-link" href="#">使用条款</a>
+                            <li>
+                                <a href="#">使用条款</a>
                             </li>
-                            <li className="ac-gf-footer-legal-links-item">
-                                <a className="ac-gf-footer-legal-link" href="#">销售政策</a>
+                            <li>
+                                <a href="#">销售政策</a>
                             </li>
-                            <li className="ac-gf-footer-legal-links-item">
-                                <a className="ac-gf-footer-legal-link" href="#">法律信息</a>
+                            <li>
+                                <a href="#">法律信息</a>
                             </li>
-                            <li className="ac-gf-footer-legal-links-item">
-                                <a className="ac-gf-footer-legal-link" href="#">网站地图</a>
+                            <li>
+                                <a href="#">网站地图</a>
                             </li>
                         </ul>
                     </div>
                 </section>
-                <p style={{margin: '-18px 0 18px 0', color: '#666'}}>
-                    <a href="#">京ICP备10214630号</a>&nbsp;
-                    <a style={{color: '#666'}} href="#">营业执照</a>&nbsp;<span
-                    className="nowrap">无线电发射设备销售备案编号11201910351200</span></p>
+                <p className="gf-footer-number">
+                    <div>
+                        <a href="#">京ICP备10214630号</a>&nbsp;
+                        <a href="#">营业执照</a>&nbsp;
+                    </div>
+                    <div>无线电发射设备销售备案编号11201910351200</div>
+
+                </p>
             </div>
         </div>
     )
