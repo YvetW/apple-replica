@@ -1,7 +1,9 @@
 @import "../base/variables";
 
 #globalnav {
+  position: relative;
   background-color: $globalnav-background-opened-dark;
+  z-index: 5;
 
   .globalnav-list {
     display: flex;
@@ -15,6 +17,10 @@
       padding: 0 8px;
       color: $globalnav-color;
       font-size: 11px;
+
+      &:hover {
+        color: $globalnav-color-hover;
+      }
     }
 
     .globalnav-link-icon {

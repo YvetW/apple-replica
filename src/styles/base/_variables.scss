@@ -7,9 +7,11 @@ $body-background-color: #fff;
 $globalnav-background-opened: #fafafc;
 $globalnav-background-opened-dark: #161617;
 
+// 深色导航栏
 // 导航栏字体颜色
 $globalnav-color: rgba(255, 255, 255, .8);
 // 二级菜单字体颜色
+$globalnav-submenu-header-color: rgb(134, 134, 139);
 $globalnav-color-secondary: #E8E8ED;
 $globalnav-color-hover: #FFFFFF;
 
