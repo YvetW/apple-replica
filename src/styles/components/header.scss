@@ -1,7 +1,10 @@
 @import "../base/variables";
 
 #globalnav {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: $globalnav-background-opened-dark;
   z-index: 5;
 

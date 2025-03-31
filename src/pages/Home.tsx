@@ -1,3 +1,5 @@
+import '../styles/pages/home.scss'
+
 export function Home() {
     return (
         <div id="home">
