@@ -1,0 +1,133 @@
+@import "../base/variables";
+
+#homepage {
+  max-width: 2560px;
+  margin: 0 auto;
+  padding-top: 44px;
+  background-color: $body-background-color;
+
+  // 顶部小字
+  .homepage-section {
+    display: grid;
+    width: 100%;
+
+    .huabei-ribbon-copy {
+      padding: 15px 0;
+      width: 98%;
+      font-size: 14px;
+      text-align: center;
+
+      .huabei-ribbon-link {
+        color: #06c;
+
+        .right-arrow {
+          font-size: 8px;
+          margin-left: 4px;
+        }
+      }
+
+    }
+  }
+
+  // 大图区域
+  .homepage-section-large {
+    margin-bottom: 12px;
+
+    [section-unit-id] {
+      position: relative;
+      width: 100%;
+      height: 692px;
+      border-bottom: 12px solid #fff;
+      background-color: pink;
+
+      .unit-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        .cta-links {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+
+    [section-unit-id="iphone-16-pro"], [section-unit-id="iphone-16"] {
+      text-align: center;
+
+      .unit-copy-wrapper {
+        padding: 55px 0;
+
+        h2 {
+          font-size: 56px;
+          line-height: 1.07143;
+          font-weight: 600;
+          color: #f5f5f7;
+        }
+      }
+    }
+
+    [section-unit-id="iphone-16-pro"] {
+      .cta-links {
+        margin-top: 19px;
+
+        a:first-child {
+          background: #06c;
+          color: #fff;
+          border-color: rgba(0, 0, 0, 0);
+          transition: background 0.3s ease, color 0.3s ease;
+
+          &:hover {
+            background: #0071e3;
+          }
+        }
+
+        a:last-child {
+          margin-left: 13px;
+          background: rgba(0, 0, 0, 0);
+          color: #06c;
+          border-color: #06c;
+          transition: background 0.3s ease, color 0.3s ease;
+
+          &:hover {
+            background: #0071e3;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    [section-unit-id="iphone-16"] {
+      .cta-links {
+        margin-top: 19px;
+
+        a:first-child {
+          background: #F5F5F7;
+          color: #000;
+          border-color: rgba(0, 0, 0, 0);
+          transition: background 0.3s ease, color 0.3s ease;
+
+          &:hover {
+            background: #fff;
+          }
+        }
+
+        a:last-child {
+          margin-left: 13px;
+          background: transparent;
+          color: #fff;
+          border-color: #fff;
+          transition: background 0.3s ease, color 0.3s ease;
+
+          &:hover {
+            background: #fff;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

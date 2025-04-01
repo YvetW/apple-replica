@@ -154,8 +154,8 @@ export function Footer() {
                 </nav>
                 <section className="gf-footer">
                     <div className="gf-footer-shop">
-                        更多选购方式：<a href="#">查找你附近的 Apple Store 零售店</a>及<a href="#">更多门店</a>，<span
-                    >或者致电 <a href="#">400-666-8800</a>。</span>
+                        更多选购方式：<a href="#">查找你附近的 Apple Store 零售店</a>及<a href="#">更多门店</a>，
+                        <span className="nowrap">或者致电 <a href="#">400-666-8800</a>。</span>
                     </div>
                     <div className="gf-footer-legal">
                         <div className="gf-footer-legal-copyright">Copyright © 2025 Apple Inc. 保留所有权利。</div>
@@ -183,7 +183,7 @@ export function Footer() {
                         <a href="#">京ICP备10214630号</a>&nbsp;
                         <a href="#">营业执照</a>&nbsp;
                     </div>
-                    <div>无线电发射设备销售备案编号11201910351200</div>
+                    <div className="nowrap">无线电发射设备销售备案编号11201910351200</div>
 
                 </p>
             </div>
