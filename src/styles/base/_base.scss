@@ -16,6 +16,9 @@ body {
   font-weight: 400;
   color: $body-text-color;
   background-color: $body-background-color;
+  // 避免滚动条挤占页面宽度
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .container {
@@ -25,7 +28,7 @@ body {
   margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #1d1d1f
 }
@@ -51,5 +54,54 @@ h1,h2,h3,h4,h5,h6 {
   min-width: 28px;
   padding: 11px 21px;
   border-radius: 980px;
+}
 
+// 覆盖整个点击区域的a标签
+.unit-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+// 包裹图片的div
+.unit-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+// 蓝色button
+.btn-get-to-know-blue {
+  background: #06c;
+  color: #fff;
+  border-color: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background: #0071e3;
+  }
+}
+
+// 白色变蓝色button
+.btn-buy-white {
+  background: rgba(0, 0, 0, 0);
+  color: #06c;
+  border-color: #06c;
+  transition: background 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background: #0071e3;
+    color: #fff;
+  }
+}
+
+// 忽略标点，避免文字视觉效果不居中
+.l-p {
+  position: absolute;
 }

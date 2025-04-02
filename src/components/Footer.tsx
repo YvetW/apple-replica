@@ -178,14 +178,14 @@ export function Footer() {
                         </ul>
                     </div>
                 </section>
-                <p className="gf-footer-number">
+                <div className="gf-footer-number">
                     <div>
                         <a href="#">京ICP备10214630号</a>&nbsp;
                         <a href="#">营业执照</a>&nbsp;
                     </div>
                     <div className="nowrap">无线电发射设备销售备案编号11201910351200</div>
 
-                </p>
+                </div>
             </div>
         </div>
     )
