@@ -1,6 +1,10 @@
 @import "../base/variables";
 
 #iphone-page {
+  max-width: 2560px;
+  margin: 0 auto;
+  padding-top: 44px;
+  background-color: $body-background-color;
 
   // 顶部选择机型导航栏
   #chapternav {
@@ -9,6 +13,20 @@
 
   // 主体区域
   #main {
+    .ribbon-drop-wrapper {
+
+    }
+
+    .section {
+      padding: 150px 0;
+      background-color: pink;
+    }
+
+    .section.no-pad-bottom {
+      padding-bottom: 0;
+      background-color: cornflowerblue;
+    }
+
 
   }
 }
