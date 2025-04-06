@@ -1,5 +1,5 @@
 import '../styles/pages/iphonePage.scss';
-import {RightOutlined} from '@ant-design/icons';
+import {LeftOutlined, RightOutlined} from '@ant-design/icons';
 
 export function IphonePage() {
     return (
@@ -10,13 +10,72 @@ export function IphonePage() {
                         <li className="chapternav-item chapternav-item-iphone-16-pro">
                             <a href="#">
                                 <figure className="chapternav-icon"></figure>
-                                <span className="chapternav-label"></span>
+                                <span className="chapternav-label">iPhone 16 Pro</span>
+                            </a>
+                        </li>
+                        <li className="chapternav-item chapternav-item-iphone-16">
+                            <a href="#">
+                                <figure className="chapternav-icon"></figure>
+                                <span className="chapternav-label">iPhone 16</span>
+                            </a>
+                        </li>
+                        <li className="chapternav-item chapternav-item-iphone-16e">
+                            <a href="#">
+                                <figure className="chapternav-icon"></figure>
+                                <span className="chapternav-label">iPhone 16e</span>
+                                <span className="chapternav-new">新款</span>
+                            </a>
+                        </li>
+                        <li className="chapternav-item chapternav-item-iphone-15">
+                            <a href="#">
+                                <figure className="chapternav-icon"></figure>
+                                <span className="chapternav-label">iPhone 15</span>
+                            </a>
+                        </li>
+                        <li className="chapternav-item chapternav-item-compare">
+                            <a href="#">
+                                <figure className="chapternav-icon"></figure>
+                                <span className="chapternav-label">机型比较</span>
+                            </a>
+                        </li>
+                        <li className="chapternav-item chapternav-item-airpods">
+                            <a href="#">
+                                <figure className="chapternav-icon"></figure>
+                                <span className="chapternav-label">AirPods</span>
+                            </a>
+                        </li>
+                        <li className="chapternav-item chapternav-item-airtag">
+                            <a href="#">
+                                <figure className="chapternav-icon"></figure>
+                                <span className="chapternav-label">AirTag</span>
+                            </a>
+                        </li>
+                        <li className="chapternav-item chapternav-item-accessories">
+                            <a href="#">
+                                <figure className="chapternav-icon"></figure>
+                                <span className="chapternav-label">配件</span>
+                            </a>
+                        </li>
+                        <li className="chapternav-item chapternav-item-ios-18">
+                            <a href="#">
+                                <figure className="chapternav-icon"></figure>
+                                <span className="chapternav-label">iOS 18</span>
+                            </a>
+                        </li>
+                        <li className="chapternav-item chapternav-item-shop-iphone">
+                            <a href="#">
+                                <figure className="chapternav-icon"></figure>
+                                <span className="chapternav-label">选购 iPhone</span>
                             </a>
                         </li>
                     </ul>
                     <div className="chapternav-paddles">
-                        <button className="chapternav-paddle chapternav-paddle-left"></button>
-                        <button className="chapternav-paddle chapternav-paddle-right"></button>
+                        <button className="chapternav-paddle chapternav-paddle-left">
+                            <LeftOutlined />
+                        </button>
+                        <button className="chapternav-paddle chapternav-paddle-right">
+                            <RightOutlined />
+                        </button>
                     </div>
                 </div>
             </nav>
