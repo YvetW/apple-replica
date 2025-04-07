@@ -81,7 +81,8 @@ export function IphonePage() {
             </nav>
             <main id="main">
                 <div className="ribbon-drop-wrapper">
-                    <div>
+                    <div className="ribbon-content row">
+                        <div className="column large-centered">
                         <p className="typography-caption">
                             购买 iPhone&nbsp;16 系列，通过花呗或指定银行最长可享
                             <span className="nowrap">
@@ -101,25 +102,34 @@ export function IphonePage() {
                                 </span>
                                 。
                             </span>
-                            <a className="ribbon-link more" href="#">选购&nbsp;iPhone</a>
+                            <a className="ribbon-link" href="#">
+                                选购&nbsp;iPhone&nbsp;<RightOutlined className="more" />
+                            </a>
                         </p>
+                        </div>
                     </div>
                 </div>
                 <section className="section section-welcome no-pad-bottom">
                     <div className="section-content-responsive">
-                        <header className="welcome-header-title">
-                            <h1>iPhone</h1>
-                            <div>
+                        <header className="welcome-header row">
+                            <h1 className="welcome-header-title">iPhone</h1>
+                            <div className="welcome-header-description">
                                 <p>悉心设计，动心更称心。</p>
                             </div>
                         </header>
                     </div>
-                    <div className="welcome-video-wall-container"></div>
+                    <div className="welcome-video-wall-container">
+                        <div className="welcome-video-content-container">
+                            <picture></picture>
+                            <video src=""></video>
+                        </div>
+                        <div className="welcome-video-controls-container"></div>
+                    </div>
                 </section>
                 <section className="section section-consider">
                     <div className="section-content-responsive">
-                        <header className="section-header">
-                            <h2 className="section-header-headline">来了解一下 iPhone</h2>
+                        <header className="section-header row">
+                            <h2 className="section-header-headline typography-section-headline">来了解一下 iPhone</h2>
                         </header>
                     </div>
                     <div className="consider-container">
@@ -140,12 +150,12 @@ export function IphonePage() {
                         </div>
                     </div>
                 </section>
-                <section className="section section-select no-pad-bottom">
+                <section className="section section-select background-alt no-pad-bottom">
                     <div className="section-content-responsive">
-                        <header className="section-header">
-                            <h2 className="section-header-headline">全系产品细细看</h2>
-                            <div className="section-header-cta-container">
-                                <a href="#">比较各款机型<RightOutlined /></a>
+                        <header className="section-header row">
+                            <h2 className="section-header-headline typography-section-headline">全系产品细细看</h2>
+                            <div className="section-header-cta-container column">
+                                <a href="#" className="section-header-cta-link">比较各款机型&nbsp;<RightOutlined className="more" /></a>
                             </div>
                         </header>
                     </div>
@@ -163,12 +173,12 @@ export function IphonePage() {
                 </section>
                 <section className="section section-incentive">
                     <div className="section-content-responsive">
-                        <header className="section-header">
-                            <h2 className="section-header-headline">
+                        <header className="section-header row">
+                            <h2 className="section-header-headline typography-section-headline">
                                 在 Apple 购买 iPhone<br />好处多多
                             </h2>
-                            <div className="section-header-cta-container">
-                                <a href="#">选购 iPhone<RightOutlined /></a>
+                            <div className="section-header-cta-container column">
+                                <a href="#">选购 iPhone&nbsp;<RightOutlined className="more" /></a>
                             </div>
                         </header>
                     </div>
@@ -186,10 +196,10 @@ export function IphonePage() {
                 </section>
                 <section className="section section-essentials no-pad-bottom">
                     <div className="section-content-responsive">
-                        <header className="section-header">
-                            <h2 className="section-header-headline">iPhone 左膀右臂</h2>
-                            <div className="section-header-cta-container">
-                                <a href="#">各款 iPhone 配件<RightOutlined /></a>
+                        <header className="section-header row">
+                            <h2 className="section-header-headline typography-section-headline">iPhone 左膀右臂</h2>
+                            <div className="section-header-cta-container column">
+                                <a href="#">各款 iPhone 配件&nbsp;<RightOutlined className="more" /></a>
                             </div>
                         </header>
                     </div>
@@ -211,8 +221,8 @@ export function IphonePage() {
                 </section>
                 <section className="section section-augment">
                     <div className="section-content-responsive">
-                        <header className="section-header">
-                            <h2 className="section-header-headline">亲密好拍档</h2>
+                        <header className="section-header row">
+                            <h2 className="section-header-headline typography-section-headline">亲密好拍档</h2>
                         </header>
                         <div className="accordion-wrapper">
                             <ul className="accordion">
@@ -228,7 +238,7 @@ export function IphonePage() {
                 <section className="section section-index">
                     <div className="section-content-responsive section-index-section">
                         <div id="iphone-index" className="index">
-                            <h2 className="index-title">iPhone</h2>
+                            <h2 className="typography-section-headline index-title">iPhone</h2>
                             <nav className="index-groups">
                                 <div className="index-group">
                                     <h3 className="index-list-title">探索 iPhone</h3>

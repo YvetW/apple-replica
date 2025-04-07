@@ -6,6 +6,29 @@
   padding-top: 44px;
   background-color: $body-background-color;
 
+  // 一行自动换行
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .column {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+
+  // 背景色
+  #main .section.background-alt {
+    background-color: rgb(245, 245, 247);
+  }
+
+
+  #main .section.no-pad-bottom {
+    padding-bottom: 0;
+  }
+
   // 顶部选择机型导航栏
   #chapternav {
     background: #fafafc;
@@ -19,149 +42,321 @@
     $chapternav-link-color-hover: rgb(0, 0, 0);
     $chapternav-new-color: rgb(182, 68, 0);
 
-    ul {
-      padding: 4px 0 5px 0;
-      margin: 0 34px;
-      white-space: nowrap;
+    .chapternav-wrapper {
+      position: relative;
+      height: 100%;
+      z-index: 1;
 
+      ul {
+        padding: 4px 0 5px 0;
+        margin: 0 34px;
+        white-space: nowrap;
+        // height: 100%;
 
-      .chapternav-item {
-        display: inline-block;
-        vertical-align: top;
-        padding: 0 20px;
+        .chapternav-item {
+          display: inline-block;
+          vertical-align: top;
+          padding: 0 20px;
 
-        a {
-          display: block;
-          position: relative;
-          color: $chapternav-link-color;
-          z-index: 1;
+          a {
+            display: block;
+            position: relative;
+            color: $chapternav-link-color;
+            z-index: 1;
 
+            .chapternav-icon {
+              margin: 0 auto 4px;
+              height: 56px;
+            }
+
+            .chapternav-label {
+              display: block;
+              margin: 0;
+              font-size: 12px;
+              line-height: 1.3333733333;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .chapternav-item:first-child {
+          padding-inline-start: 4px;
+        }
+
+        .chapternav-item:last-child {
+          padding-inline-end: 4px;
+        }
+
+        .chapternav-item-iphone-16-pro,
+        .chapternav-item-iphone-16,
+        .chapternav-item-iphone-15 {
           .chapternav-icon {
-            margin: 0 auto 4px;
-            height: 56px;
-          }
-
-          .chapternav-label {
-            font-size: 12px;
-            line-height: 1.3333733333;
-            font-weight: 400;
+            width: 38px;
+            background-size: 38px 56px;
+            background-repeat: no-repeat;
+            background-image: url('../../assets/images/iphonePage/iphone_16_pro_light_large.svg');
           }
         }
-      }
 
-      .chapternav-item:first-child {
-        padding-inline-start: 4px;
-      }
+        .chapternav-item-iphone-16e {
+          .chapternav-icon {
+            width: 56px;
+            background-size: 56px 56px;
+            background-repeat: no-repeat;
+            background-image: url('../../assets/images/iphonePage/iphone_16e_light_large.svg');
+          }
 
-      .chapternav-item:last-child {
-        padding-inline-end: 4px;
-      }
+          .chapternav-new {
+            display: block;
+            font-size: 10px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: $chapternav-new-color;
+          }
+        }
 
-      .chapternav-item-iphone-16-pro,
-      .chapternav-item-iphone-16,
-      .chapternav-item-iphone-15 {
-        .chapternav-icon {
-          width: 38px;
-          background-size: 38px 56px;
-          background-repeat: no-repeat;
-          background-image: url('../../assets/images/iphonePage/iphone_16_pro_light_large.svg');
+        .chapternav-item-compare {
+          .chapternav-icon {
+            width: 45px;
+            background-size: 45px 54px;
+            background-repeat: no-repeat;
+            background-image: url('../../assets/images/iphonePage/iphone_compare_light_large.svg');
+          }
+        }
+
+        .chapternav-item-airpods {
+          .chapternav-icon {
+            width: 38px;
+            background-size: 38px 56px;
+            background-repeat: no-repeat;
+            background-image: url('../../assets/images/iphonePage/airpods_light_large.svg');
+          }
         }
       }
 
-      .chapternav-item-iphone-16e {
-        .chapternav-icon {
-          width: 56px;
-          background-size: 56px 56px;
-          background-repeat: no-repeat;
-          background-image: url('../../assets/images/iphonePage/iphone_16e_light_large.svg');
+      .chapternav-paddles {
+        display: block;
+        margin-top: 13.66px;
+
+        .chapternav-paddle {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          background: none;
+          border: 0 solid rgb(210, 210, 215);
+          width: 33px;
+          text-align: center;
+          color: rgb(29, 29, 31);
+          border-radius: 0;
         }
 
-        .chapternav-new {
+        .chapternav-paddle-left {
+          left: 0;
+          border-right-width: 1px;
+        }
+
+        .chapternav-paddle-right {
+          right: 0;
+          border-left-width: 1px;
+        }
+      }
+    }
+
+    .chapternav-item-airtag {
+      .chapternav-icon {
+        width: 30px;
+        background-size: 30px 54px;
+        background-repeat: no-repeat;
+        background-image: url('../../assets/images/iphonePage/airtag_light_large.svg');
+      }
+    }
+
+    .chapternav-item-accessories {
+      .chapternav-icon {
+        width: 38px;
+        background-size: 38px 56px;
+        background-repeat: no-repeat;
+        background-image: url('../../assets/images/iphonePage/accessories_light_large.svg');
+      }
+    }
+
+    .chapternav-item-ios-18 {
+      .chapternav-icon {
+        width: 32px;
+        background-size: 32px 54px;
+        background-repeat: no-repeat;
+        background-image: url('../../assets/images/iphonePage/iphone_ios_light_large.svg');
+      }
+    }
+
+    .chapternav-item-shop-iphone {
+      .chapternav-icon {
+        width: 56px;
+        background-size: 56px 56px;
+        background-repeat: no-repeat;
+        background-image: url('../../assets/images/iphonePage/shop_iphone_light_large.svg');
+      }
+    }
+  }
+
+  // 主体区域
+  #main {
+    // 花呗
+    .ribbon-drop-wrapper {
+      padding: 9px 0;
+      line-height: 1.5;
+      overflow: hidden;
+      font-size: 12px;
+      font-weight: 400;
+      color: rgb(29, 29, 31);
+      background-color: rgb(245, 245, 247);
+
+      .ribbon-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 83.33%;
+        min-width: 320px;
+
+        .large-centered {
+          margin-inline-start: auto;
+          margin-inline-end: auto;
+        }
+
+        .typography-caption {
           display: block;
-          font-size: 10px;
-          line-height: 1.2;
+          color: rgb(29, 29, 31);
+          text-align: center;
+
+          .ribbon-link {
+            color: rgb(0, 102, 204);
+
+            .more {
+              font-size: 10px;
+            }
+          }
+
+          .footnote a {
+            text-decoration: underline;
+
+            &:hover {
+              color: #0071e3;
+            }
+          }
+
+          .footnote-supglyph {
+            position: relative;
+            vertical-align: initial;
+            text-underline-offset: -0.28em;
+          }
+        }
+      }
+    }
+
+    // 公用
+    .section {
+      padding: 150px 0;
+
+      .section-content-responsive {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 87.5vw;
+        max-width: 1680px;
+
+        .section-header {
+          display: flex;
+          justify-content: space-between;
+          gap: 28px;
+          padding-bottom: 80px;
+          margin-top: -10px;
+
+          .section-header-cta-container {
+            align-self: flex-end;
+            color: rgb(0, 102, 204);
+
+            .section-header-cta-link {
+              font-size: 17px;
+              line-height: 1.4705882353;
+              font-weight: 400;
+              letter-spacing: -0.022em;
+
+              .more {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .typography-section-headline {
+          font-size: 56px;
+          line-height: 1.0714285714;
           font-weight: 600;
-          color: $chapternav-new-color;
-        }
-      }
-
-      .chapternav-item-compare {
-        .chapternav-icon {
-          width: 45px;
-          background-size: 45px 54px;
-          background-repeat: no-repeat;
-          background-image: url('../../assets/images/iphonePage/iphone_compare_light_large.svg');
-        }
-      }
-
-      .chapternav-item-airpods {
-        .chapternav-icon {
-          width: 38px;
-          background-size: 38px 56px;
-          background-repeat: no-repeat;
-          background-image: url('../../assets/images/iphonePage/airpods_light_large.svg');
+          letter-spacing: -0.005em;
         }
       }
     }
+  }
 
-    .chapternav-paddles {
+  // 首图视频
+  .section-welcome {
+    padding-top: 80px;
 
+    .welcome-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 80px;
+      column-gap: 80px;
+
+      .welcome-header-title {
+        line-height: 1.0875;
+        font-size: 80px;
+        font-weight: 600;
+        flex-grow: 1;
+        max-width: calc(100% - 80px);
+      }
+
+      .welcome-header-description {
+        line-height: 1.25;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: .007em;
+        align-self: flex-end;
+        max-width: 320px;
+        padding-block: 8px;
+      }
+    }
+
+    .welcome-video-wall-container {
+      height: 80vh;
+      min-height: 680px;
+      max-width: 1920px;
+      max-height: 1260px;
+      margin: 0 auto;
+      width: 87.5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-color: pink;
+
+      .welcome-video-content-container {
+
+      }
     }
   }
 
-  .chapternav-item-airtag {
-    .chapternav-icon {
-      width: 30px;
-      background-size: 30px 54px;
-      background-repeat: no-repeat;
-      background-image: url('../../assets/images/iphonePage/airtag_light_large.svg');
-    }
+  // 了解iphone
+  .section-consider {
+
   }
 
-  .chapternav-item-accessories {
-    .chapternav-icon {
-      width: 38px;
-      background-size: 38px 56px;
-      background-repeat: no-repeat;
-      background-image: url('../../assets/images/iphonePage/accessories_light_large.svg');
-    }
+  // 对比
+  .section-select {
+
+
   }
 
-  .chapternav-item-ios-18 {
-    .chapternav-icon {
-      width: 32px;
-      background-size: 32px 54px;
-      background-repeat: no-repeat;
-      background-image: url('../../assets/images/iphonePage/iphone_ios_light_large.svg');
-    }
-  }
-
-  .chapternav-item-shop-iphone {
-    .chapternav-icon {
-      width: 56px;
-      background-size: 56px 56px;
-      background-repeat: no-repeat;
-      background-image: url('../../assets/images/iphonePage/shop_iphone_light_large.svg');
-    }
-  }
 }
 
-// 主体区域
-#main {
-  .ribbon-drop-wrapper {
 
-  }
-
-  .section {
-    padding: 150px 0;
-    background-color: pink;
-  }
-
-  .section.no-pad-bottom {
-    padding-bottom: 0;
-    background-color: cornflowerblue;
-  }
-
-
-}
 
